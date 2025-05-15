@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matthews Rooftop Restaurant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #FFD700;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #003366;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        input, select, textarea, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #003366;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #002244;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+        }
+
+        #reviews {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #review-list {
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        .review-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.wixstatic.com/media/6eb5e0_ab8bcfe7842140529e1ce8a989dc292c~mv2_d_2429_2429_s_4_2.jpeg/v1/crop/x_0,y_187,w_2429,h_2055/fill/w_532,h_450,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6eb5e0_ab8bcfe7842140529e1ce8a989dc292c~mv2_d_2429_2429_s_4_2.jpeg" alt="Matthews Rooftop Restaurant">
+        <h1>Matthews Rooftop Restaurant</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.php">Menu</a>
+        <a href="reservations.php">Reservation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <style>
+    .italic-text {
+        font-style: italic;
+    }
+    </style>
+
+    <style>
+    #about h2 {
+        font-size: 2.5em;
+        color: black;
+      }
+    #about p {
+        font-size: 1.2em;
+    }
+</style>
+
+    <section id="about" style="background-color: #f0f8ff;">
+        <h2>About Us</h2>
+        <p class="italic-text">Matthews is located upstairs in Baywalk Mall on the main Rodney Bay strip within walking distance from the local beaches and many of Saint Lucia’s top hotels. We are only a short drive from the islands holiday lets, vacation villas and nearby attractions. Access is easy from the street with a staircase and glass elevator leading straight to our front door.</p> 
+        <p class="italic-text">First opened in January 2015 we built a great reputation before a tragic fire destroyed the original building in early 2016. After months of hard work plus a total upgrade we opened our new location in May 2016 which has gone from strength to strength. The restaurant has panoramic views over the bay from our beautiful rooftop terrace. Expect cool breeze day and night in a lovely relaxed atmosphere serving international cuisine together with warm Saint Lucian customer service.</p> 
+        <p class="italic-text">Modern design combined with classic Caribbean delivers a beautiful unique restaurant making a popular choice with both overseas visitors and locals. Friendly trained staff produce great tropical cocktails & refreshments, weekly specials alongside excellent laid back stylish dining.</p>  
+        <p class="italic-text">Experienced restaurant owners Matthew & Catherine Chambers originally from London UK together with our international and Caribbean team led by Head Chef Brandford Edmunds are bringing the taste to Saint Lucia using fresh quality ingredients prepared in the kitchen everyday. The menus have a varied choice of both global and local inspired dishes. Matthews can cater for large group bookings, wedding receptions, networking events and memorable special occasions.</p>
+        <p class="italic-text">Thanks for Reading..</p> 
+        <p class="italic-text">One Love !</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Matthews Rooftop Restaurant. All rights reserved.
+        <br>
+        <a href="admin.php" style="color: gray; font-size: 0.9em;">Admin Login</a>
+    </footer>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Reservation submitted! Thank you.");
+            this.reset(); // optional: clears the form
+        });
+    </script>
+
+</body>
+</html>

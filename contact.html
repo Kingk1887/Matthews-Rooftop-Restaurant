@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matthews Rooftop Restaurant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #FFD700;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #003366;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        input, select, textarea, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #003366;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #002244;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+        }
+
+        #reviews {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #review-list {
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        .review-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.wixstatic.com/media/6eb5e0_ab8bcfe7842140529e1ce8a989dc292c~mv2_d_2429_2429_s_4_2.jpeg/v1/crop/x_0,y_187,w_2429,h_2055/fill/w_532,h_450,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6eb5e0_ab8bcfe7842140529e1ce8a989dc292c~mv2_d_2429_2429_s_4_2.jpeg" alt="Matthews Rooftop Restaurant">
+        <h1>Matthews Rooftop Restaurant</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.php">Menu</a>
+        <a href="reservations.php">Reservation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+   <section id="contact" style="background-color: #f9f9f9; padding: 40px; text-align: center;">
+    <h2>Location & Hours</h2>
+    <p>
+        📍 <strong>Matthews Rooftop Restaurant</strong><br>
+        Rodney Bay Village, Saint Lucia<br>
+        West Indies<br><br>
+
+        📞 <strong>Reservations:</strong> +1(758) 458-0200<br>
+        📱 <strong>WhatsApp:</strong> +44 7903 409370<br><br>
+
+        <strong>Opening Hours:</strong><br>
+        Monday: 12pm - 9.30pm<br>
+        Tuesday: 12pm - 9.30pm<br>
+        Wednesday: 12pm - 9.30pm<br>
+        Thursday: 12pm - 9.30pm<br>
+        Friday: 12pm - 10pm<br>
+        Saturday: 12pm - 10pm<br>
+        Sunday: 12pm - 9pm
+    </p>
+
+    <h3>Find Us Here</h3>
+    <p>Matthew's Rooftop Restaurant, Rodney Bay, Gros Islet, Saint Lucia</p>
+
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5259514694837!2d-60.954191!3d14.076384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c438e771c4e798d%3A0x87cb81f2b3f76a49!2sMatthew&#39;s%20Rooftop!5e0!3m2!1sen!2slc!4v1685052875482!5m2!1sen!2slc" 
+    width="100%" 
+    height="500" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</section>
+
+    <footer>
+        &copy; 2025 Matthews Rooftop Restaurant. All rights reserved.
+        <br>
+        <a href="admin.php" style="color: gray; font-size: 0.9em;">Admin Login</a>
+    </footer>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Reservation submitted! Thank you.");
+            this.reset(); // optional: clears the form
+        });
+    </script>
+
+</body>
+</html>
